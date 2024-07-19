@@ -2,6 +2,8 @@
 
 This Flask-based web application allows users to upload an image, draw shapes and strokes (rectangles, brush strokes, and erase strokes) on it, and generate a mask. The mask can then be downloaded directly from the application.
 
+https://github.com/user-attachments/assets/669a6e61-1e24-480e-95ad-3eb168bd208d
+
 ## Features
 
 - **Image Upload:** Allows users to upload an image that will be displayed on a canvas.
