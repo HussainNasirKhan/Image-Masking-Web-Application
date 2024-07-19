@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Masking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Image Masking</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="image-upload" name="image">
+        <button type="submit">Upload</button>
+    </form>
+    <div id="controls">
+        <label for="mode">Mode:</label>
+        <select id="mode">
+            <option value="rectangle">Rectangle</option>
+            <option value="brush">Brush</option>
+            <option value="erase">Erase</option>
+        </select>
+        <label for="brush-size">Brush Size:</label>
+        <input type="number" id="brush-size" value="10">
+        <label for="erase-size">Erase Size:</label>
+        <input type="number" id="erase-size" value="10">
+    </div>
+    <div id="canvas-container">
+        <canvas id="image-canvas"></canvas>
+    </div>
+    <button id="apply-button">Generate Mask</button>
+    <img id="mask-image" style="display:none;">
+    <a id="download-button" href="#" download="mask.png" style="display:none;">Download Mask</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

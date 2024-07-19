@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#controls label {
+    margin-right: 5px;
+}
+
+#canvas-container {
+    position: relative;
+}
+
+canvas {
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#mask-image {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+
+input[type="file"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="file"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#apply-button {
+    background-color: #28a745;
+}
+
+#apply-button:hover {
+    background-color: #218838;
+}
+
+#download-button {
+    background-color: #ffc107;
+}
+
+#download-button:hover {
+    background-color: #e0a800;
+}
